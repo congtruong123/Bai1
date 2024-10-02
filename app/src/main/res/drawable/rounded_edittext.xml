@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Định dạng viền bo tròn -->
+    <corners android:radius="12dp" />
+
+    <!-- Định dạng viền -->
+    <stroke
+        android:width="2dp"
+        android:color="#000000" /> <!-- Màu đỏ, bạn có thể thay đổi màu tùy thích -->
+
+    <!-- Định dạng nền -->
+    <solid android:color="#FFFFFF" /> <!-- Màu nền trắng -->
+</shape>

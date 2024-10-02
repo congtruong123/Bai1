@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ImageView for profile picture -->
+
+        <!-- Title -->
+
+        <!-- Full name -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="133dp"
+            android:layout_height="122dp"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_account_circle_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="16dp"
+            android:text="Nhập thông tin cá nhân"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Họ và tên" /> <!-- Viền bo tròn -->
+
+        <!-- Email -->
+
+        <!-- Phone number -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Số điện thoại"
+            android:inputType="phone" />
+
+        <!-- Gender selection -->
+
+        <!-- Terms and conditions -->
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:text="Nam" />
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="63dp"
+                android:layout_height="35dp"
+                android:text="Nữ" />
+
+            <RadioButton
+                android:id="@+id/rbOther"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="Khác" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/cbTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đồng ý với điều khoản sử dụng" />
+
+        <!-- Save button -->
+
+        <!-- RecyclerView to display the user list -->
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Lưu" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
